@@ -7,5 +7,9 @@
 	<Label Text="Welcome to Xamarin Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-
+    <StackLayout>
+        <Button Text="打开CarouselPage" Clicked="Button_Clicked"></Button>
+        <Button Text="打开MasterDetailPage" Clicked="Button_Clicked_1"></Button>
+        <Button Text="打开TabbedPageTest" Clicked="Button_Clicked_2"></Button>
+    </StackLayout>
 </ContentPage>

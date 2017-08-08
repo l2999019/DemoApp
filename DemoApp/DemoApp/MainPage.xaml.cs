@@ -13,5 +13,20 @@ namespace DemoApp
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new CarouselPage.CarouselPageTest());
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new MasterDetailPage.MasterDetailPageTest());
+        }
+
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new TabbedPage.TabbedPageTest());
+        }
     }
 }
