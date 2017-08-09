@@ -28,5 +28,20 @@ namespace DemoApp
         {
             Navigation.PushModalAsync(new TabbedPage.TabbedPageTest());
         }
+
+        private void Button_Clicked_3(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new StackLayoutDemo());
+        }
+
+        private void Button_Clicked_4(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AbsoluteLayoutDemo());
+        }
+
+        private void Button_Clicked_5(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new RelativeLayoutDemo());
+        }
     }
 }

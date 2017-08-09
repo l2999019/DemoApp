@@ -11,5 +11,8 @@
         <Button Text="打开CarouselPage" Clicked="Button_Clicked"></Button>
         <Button Text="打开MasterDetailPage" Clicked="Button_Clicked_1"></Button>
         <Button Text="打开TabbedPageTest" Clicked="Button_Clicked_2"></Button>
+        <Button Text="打开StackLayout" Clicked="Button_Clicked_3"></Button>
+        <Button Text="打开AbsoluteLayout" Clicked="Button_Clicked_4"></Button>
+        <Button Text="打开RelativeLayout" Clicked="Button_Clicked_5"></Button>
     </StackLayout>
 </ContentPage>
