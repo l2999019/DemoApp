@@ -4,10 +4,9 @@
              x:Class="DemoApp.AbsoluteLayoutDemo">
     <ContentPage.Content>
         <AbsoluteLayout>
-         
             <Label Text="这里是数值定位"
                 AbsoluteLayout.LayoutBounds="1,50,50,100" LineBreakMode="WordWrap"  />
-            <Label Text="I'm bottom center on every device."
+            <Label Text="这里是按百分比例定位" 
                 AbsoluteLayout.LayoutBounds=".5,1,.5,.1" AbsoluteLayout.LayoutFlags="All"
                 LineBreakMode="WordWrap"  />
             <BoxView Color="Olive"  AbsoluteLayout.LayoutBounds="1,.5, 25, 100" 

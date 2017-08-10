@@ -44,6 +44,9 @@
     <Compile Include="CarouselPage\CarouselPageTest.xaml.cs">
       <DependentUpon>CarouselPageTest.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GridDemo.xaml.cs">
+      <DependentUpon>GridDemo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -66,6 +69,9 @@
     </Compile>
     <Compile Include="StackLayoutDemo.xaml.cs">
       <DependentUpon>StackLayoutDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StackLayoutPage.xaml.cs">
+      <DependentUpon>StackLayoutPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="TabbedPage\TabbedPageTest.xaml.cs">
       <DependentUpon>TabbedPageTest.xaml</DependentUpon>
@@ -145,6 +151,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="RelativeLayoutDemo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridDemo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StackLayoutPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

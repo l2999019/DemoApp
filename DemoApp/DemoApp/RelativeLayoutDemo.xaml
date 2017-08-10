@@ -11,7 +11,7 @@
             Type=RelativeToParent,Property=Width,Factor=1,Constant=0}"
         RelativeLayout.HeightConstraint="{ConstraintExpression
             Type=RelativeToParent,Property=Height,Factor=.8,Constant=0}" />
-            <BoxView Color="Blue"
+            <BoxView Color="Blue" 
         RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,
             ElementName=redBox,Property=Y,Factor=1,Constant=20}"
         RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView,
@@ -20,6 +20,7 @@
             Type=RelativeToParent,Property=Width,Factor=.5,Constant=0}"
         RelativeLayout.HeightConstraint="{ConstraintExpression
             Type=RelativeToParent,Property=Height,Factor=.5,Constant=0}" />
+            <Label RelativeLayout.BoundsConstraint=""/>
         </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

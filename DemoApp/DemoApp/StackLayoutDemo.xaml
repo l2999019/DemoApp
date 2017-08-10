@@ -4,40 +4,40 @@
              x:Class="DemoApp.StackLayoutDemo">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Spacing="0" Padding="0" BackgroundColor="Maroon">
+            <StackLayout Spacing="0" Padding="0" BackgroundColor="BlueViolet">
                 <BoxView HorizontalOptions="FillAndExpand" HeightRequest="100"
           VerticalOptions="Start" Color="Gray" />
-                <Button BorderRadius="30" HeightRequest="60" WidthRequest="60"
+                <Button BorderRadius="30" HeightRequest="60" WidthRequest="60" 
           BackgroundColor="Red" HorizontalOptions="Center" VerticalOptions="Start" />
-                <StackLayout HeightRequest="100" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Spacing="20" BackgroundColor="Maroon">
-                    <Label Text="User Name" FontSize="28" HorizontalOptions="Center"
+                <StackLayout HeightRequest="100" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Spacing="20" BackgroundColor="BlueViolet">
+                    <Label Text="用户名" FontSize="28" HorizontalOptions="Center"
             VerticalOptions="Center" FontAttributes="Bold" />
-                    <Entry Text="Bio + Hashtags" TextColor="White"
-            BackgroundColor="Maroon" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" />
+                    <Entry Text="内容" TextColor="White"
+            BackgroundColor="BlueViolet" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
                     <StackLayout Spacing="0" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="Start">
                         <BoxView BackgroundColor="Black" WidthRequest="40" HeightRequest="40"  HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
-                        <Label FontSize="14" TextColor="Black" Text="Accent Color" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+                        <Label FontSize="14" TextColor="Black" Text="颜色1" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
                     </StackLayout>
                     <StackLayout Spacing="0" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
-                        <BoxView BackgroundColor="Maroon" WidthRequest="40" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center" />
-                        <Label FontSize="14" TextColor="Black" Text="Primary Color" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+                        <BoxView BackgroundColor="CadetBlue" WidthRequest="40" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center" />
+                        <Label FontSize="14" TextColor="Black" Text="颜色2" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
-                    <Label FontSize="14" Text="Age:" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100" />
-                    <Entry HorizontalOptions="FillAndExpand" Text="35" TextColor="White" BackgroundColor="Maroon" />
+                    <Label FontSize="14" Text="年龄:" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100" />
+                    <Entry HorizontalOptions="FillAndExpand" Text="35" TextColor="White" BackgroundColor="BlueViolet" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
-                    <Label FontSize="14" Text="Interests:" TextColor="White"
+                    <Label FontSize="14" Text="内容:" TextColor="White"
           HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100" />
-                    <Entry HorizontalOptions="FillAndExpand" Text="Xamarin.Forms" TextColor="White" BackgroundColor="Maroon" />
+                    <Entry HorizontalOptions="FillAndExpand" Text="Xamarin.Forms" TextColor="White" BackgroundColor="BlueViolet" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
-                    <Label FontSize="14" Text="Ask me about:" TextColor="White"
+                    <Label FontSize="14" Text="相关内容:" TextColor="White"
           HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100"/>
-                    <Entry HorizontalOptions="FillAndExpand" Text="Xamarin, C#, .NET, Mono..." TextColor="White" BackgroundColor="Maroon" />
+                    <Entry HorizontalOptions="FillAndExpand" Text="blalala" TextColor="White" BackgroundColor="BlueViolet" />
                 </StackLayout>
             </StackLayout>
         </ScrollView>
