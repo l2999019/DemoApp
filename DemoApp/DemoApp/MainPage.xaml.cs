@@ -48,5 +48,10 @@ namespace DemoApp
         {
             Navigation.PushAsync(new GridDemo());
         }
+
+        private void Button_Clicked_7(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ViewsDomePage());
+        }
     }
 }

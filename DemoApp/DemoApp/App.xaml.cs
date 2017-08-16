@@ -13,7 +13,7 @@ namespace DemoApp
         {
             InitializeComponent();
 
-            MainPage = new Xamarin.Forms.NavigationPage(new DemoApp.MainPage()) { BarBackgroundColor=Color.Red};
+            MainPage = new Xamarin.Forms.NavigationPage(new DemoApp.MainPage()) { BarBackgroundColor=Color.BlueViolet};
         }
 
         protected override void OnStart()

@@ -76,6 +76,9 @@
     <Compile Include="TabbedPage\TabbedPageTest.xaml.cs">
       <DependentUpon>TabbedPageTest.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewsDomePage.xaml.cs">
+      <DependentUpon>ViewsDomePage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -163,6 +166,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="StackLayoutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ViewsDomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

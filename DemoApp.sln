@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.Android", "DemoApp\DemoApp.Android\DemoApp.Android.csproj", "{67414573-B35D-43CC-A261-9EEA20EAF0DB}"
 EndProject
@@ -9,7 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp", "DemoApp\DemoApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.iOS", "DemoApp\DemoApp.iOS\DemoApp.iOS.csproj", "{230C2B14-E419-4D06-A966-62D4C1130C5C}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DemoAppShared", "DemoAppShared\DemoAppShared.shproj", "{823669E9-4137-4A0C-BC13-795A01633878}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		DemoAppShared\DemoAppShared.projitems*{823669e9-4137-4a0c-bc13-795a01633878}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
 		Ad-Hoc|iPhone = Ad-Hoc|iPhone
@@ -108,5 +113,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BFCE0A1-1704-4E2B-9A20-DBF38178700B}
 	EndGlobalSection
 EndGlobal
