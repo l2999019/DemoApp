@@ -16,5 +16,7 @@
         <Button Text="打开RelativeLayout" Clicked="Button_Clicked_5"></Button>
         <Button Text="打开Gridsss" Clicked="Button_Clicked_6"></Button>
         <Button Text="打开Views" Clicked="Button_Clicked_7"></Button>
+        <Button Text="打开MVVMDemo1" Clicked="Button_Clicked_8"></Button>
+        <Button Text="打开MVVMDemo2" Clicked="Button_Clicked_9"></Button>
     </StackLayout>
 </ContentPage>

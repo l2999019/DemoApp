@@ -53,5 +53,14 @@ namespace DemoApp
         {
             Navigation.PushAsync(new ViewsDomePage());
         }
+
+        private void Button_Clicked_8(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MVVMDemo.MVVMPageDemo());
+        }
+        private void Button_Clicked_9(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MVVMDemo.MVVMDemoPage2());
+        }
     }
 }

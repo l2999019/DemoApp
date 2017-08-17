@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DemoApp.MVVMDemo.ViewModel"
+             x:Class="DemoApp.MVVMDemo.MVVMDemoPage2">
+    <ContentPage.BindingContext>
+        <local:AddNumViewModel></local:AddNumViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label  Text="{Binding NumSun,Mode=TwoWay,StringFormat='总数NumSun={0:F2}'}" />
+            <Label Text="{Binding Num1,
+                      StringFormat='Num1 = {0:F2}'}" />
+            <Slider Value="{Binding Num1,Mode=TwoWay}" />
+            <Label Text="{Binding Num2,
+                      StringFormat='Num2 = {0:F2}'}" />
+            <Slider Value="{Binding Num2,Mode=TwoWay}" />
+            <Label Text="{Binding Num3,
+                      StringFormat='Num3 = {0:F2}'}" />
+            <Slider Value="{Binding Num3,Mode=TwoWay}" />
+            <Button Text="清空" Command="{Binding CleanCommand}" CommandParameter="aaa" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
