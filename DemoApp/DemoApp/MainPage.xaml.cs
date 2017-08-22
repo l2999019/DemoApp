@@ -62,5 +62,24 @@ namespace DemoApp
         {
             Navigation.PushAsync(new MVVMDemo.MVVMDemoPage2());
         }
+
+        int add = 0;
+        private void Button_Clicked_10(object sender, EventArgs e)
+        {
+            
+            Navigation.PushAsync(new DisplayingAlertsPages());
+            if (add == 0)
+            {
+
+
+                MessagingCenter.Send<MainPage, string>(this, "Hello", "消息~~~");
+            }
+            else
+            {
+                MessagingCenter.Send<MainPage, string>(this, "Hello", "消息2~~~");
+            }
+            add++;
+
+        }
     }
 }

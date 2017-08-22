@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoApp.DisplayingAlertsPages">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin Forms!" x:Name="lab" />
+            <Button Clicked="Button_Clicked"  Text="Alert"/>
+            <Button Clicked="Button_Clicked_3"  Text="Question"/>
+            <Button Clicked="Button_Clicked_1" Text="ActionSheet" />
+            <Button Clicked="Button_Clicked_2" Text="ActionSheet2" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
