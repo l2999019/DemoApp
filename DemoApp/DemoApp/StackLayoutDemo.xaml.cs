@@ -16,5 +16,10 @@ namespace DemoApp
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("asdasd", "asdasd", "OK");
+        }
+    }
 }

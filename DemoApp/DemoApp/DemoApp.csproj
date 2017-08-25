@@ -74,6 +74,7 @@
     </Compile>
     <Compile Include="MVVMDemo\ViewModel\AddNumViewModel.cs" />
     <Compile Include="MVVMDemo\ViewModel\TimeViewModel.cs" />
+    <Compile Include="MyRenderer\MyProgressBar.cs" />
     <Compile Include="NavigationPage\NavigationPageTest.xaml.cs">
       <DependentUpon>NavigationPageTest.xaml</DependentUpon>
     </Compile>

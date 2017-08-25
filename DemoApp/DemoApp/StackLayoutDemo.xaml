@@ -37,6 +37,7 @@
                 <StackLayout Orientation="Horizontal">
                     <Label FontSize="14" Text="相关内容:" TextColor="White"
           HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100"/>
+                    <Button Clicked="Button_Clicked" Text="DDDD" />
                     <Entry HorizontalOptions="FillAndExpand" Text="blalala" TextColor="White" BackgroundColor="BlueViolet" />
                 </StackLayout>
             </StackLayout>
