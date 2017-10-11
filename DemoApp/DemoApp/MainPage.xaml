@@ -11,7 +11,7 @@
     <StackLayout>
 
         
-            <Button Text="打开CarouselPage" Clicked="Button_Clicked"></Button>
+        <Button Text="打开CarouselPage" Clicked="Button_Clicked"></Button>
         <Button Text="打开MasterDetailPage" Clicked="Button_Clicked_1"></Button>
         <Button Text="打开TabbedPageTest" Clicked="Button_Clicked_2"></Button>
         <Button Text="打开StackLayout" Clicked="Button_Clicked_3"></Button>
@@ -22,7 +22,9 @@
         <Button Text="打开MVVMDemo1" Clicked="Button_Clicked_8"></Button>
         <Button Text="打开MVVMDemo2" Clicked="Button_Clicked_9"></Button>
         <Button Text="打开Alert" Clicked="Button_Clicked_10" x:Name="butalert"></Button>
-        
-    </StackLayout>
+        <Button Text="打开RESTful" Clicked="butalert_Clicked" ></Button>
+
+
+        </StackLayout>
     </ScrollView>
 </ContentPage>

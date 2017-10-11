@@ -81,5 +81,10 @@ namespace DemoApp
             add++;
 
         }
+
+        private void butalert_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new HTTPClientDemo.ListViewPage());
+        }
     }
 }

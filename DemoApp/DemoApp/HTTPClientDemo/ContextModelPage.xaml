@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoApp.HTTPClientDemo.ContextModelPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="标题:" />
+            <Entry Placeholder="请输入标题" x:Name="titel" />
+            <Label Text="时间:"  />
+            <DatePicker Format="yyyy-MM-dd" x:Name="times" />
+            <Label Text="内容:"  />
+            <Editor  HorizontalOptions="FillAndExpand" HeightRequest="200" x:Name="contexts" />
+            <Button Text="保存" x:Name="BtnSave" Clicked="BtnSave_Clicked" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

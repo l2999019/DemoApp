@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DemoApp.HTTPClientDemo.ViewModels"
+             xmlns:Controls="clr-namespace:DemoApp.HTTPClientDemo;" 
+             x:Class="DemoApp.HTTPClientDemo.ListViewPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="添加"  Order="Default" Clicked="ToolbarItem_Clicked"   />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Controls:MyListView 
+                ItemsSource="{Binding Items}"
+                VerticalOptions="FillAndExpand"
+                HasUnevenRows="true"
+                LoadMoreCommand="{Binding LoadItemsCommand}"
+                x:Name="listdate"
+				 >
+               
+                <ListView.ItemTemplate>
+                    
+                    <DataTemplate >
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem  CommandParameter="{Binding ID}" Clicked="MenuItem_Clicked" Text="修改"  />
+                                <MenuItem x:Name="DeleteBtn"  CommandParameter="{Binding ID}" Clicked="MenuItem_Clicked_1" Text="删除" IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding Title}"
+                       LineBreakMode="NoWrap"
+                       Style="{DynamicResource ListItemTextStyle}"
+                       FontSize="16"/>
+                                <Label Text="{Binding AddTime}"
+                       LineBreakMode="NoWrap"
+                       Style="{DynamicResource ListItemDetailTextStyle}"
+                       FontSize="13"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </Controls:MyListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
