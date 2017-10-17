@@ -13,8 +13,12 @@ namespace DemoApp.HTTPClientDemo.ViewModels
 {
     public class ContextViewModel: INotifyPropertyChanged
     {
+        //初始化仓储
         public ContextDataStore DataStore =new ContextDataStore();
+
+        //设置绑定对象
         public ObservableCollection<ContextModel> Items { get; set; }
+        //设置刷新命令
         public Command LoadItemsCommand { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -23,11 +27,15 @@ namespace DemoApp.HTTPClientDemo.ViewModels
         private int page = 1;
         private int rows = 10;
 
+        /// <summary>
+        /// 初始化各种数据与监听
+        /// </summary>
         public  ContextViewModel()
         {
             Items = new ObservableCollection<ContextModel>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
-            //DeleteItemCommand = new Command<int>(async (key) => await DeleteItem(key));
+
+            //监听添加的消息
             MessagingCenter.Subscribe<ContextModelPage, ContextModel>(this, "AddItem", async (obj, item) =>
             {
 
@@ -37,8 +45,6 @@ namespace DemoApp.HTTPClientDemo.ViewModels
                 if (date)
                 {
                     LoadDate();
-                    // Items.Add(_item);
-                    // OnPropertyChanged("Items");
                     await obj.DisplayAlert("提示", "添加成功!", "关闭");
                     await obj.Navigation.PopAsync();
                 }
@@ -49,11 +55,10 @@ namespace DemoApp.HTTPClientDemo.ViewModels
                
             });
 
-
+            //监听更新的消息
             MessagingCenter.Subscribe<ContextModelPage, ContextModel>(this, "UpdateItem", async (obj, item) =>
             {
 
-               // var _item = item as ContextModel;
                 var date = await DataStore.UpdateItemAsync(item);
 
                 if (date)
@@ -71,6 +76,12 @@ namespace DemoApp.HTTPClientDemo.ViewModels
             ExecuteLoadItemsCommand();
         }
 
+
+        /// <summary>
+        /// 删除的方法
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public async Task<bool> DeleteItem(int id)
         {
             var date = await DataStore.DeleteItemAsync(id);
@@ -83,6 +94,10 @@ namespace DemoApp.HTTPClientDemo.ViewModels
             return date;
         }
 
+        /// <summary>
+        /// 加载数据的命令
+        /// </summary>
+        /// <returns></returns>
         async Task ExecuteLoadItemsCommand()
         {
           
@@ -103,7 +118,9 @@ namespace DemoApp.HTTPClientDemo.ViewModels
             }
         }
 
-
+        /// <summary>
+        /// 重新刷新数据
+        /// </summary>
         private async void LoadDate()
         {
             Items.Clear();
