@@ -22,7 +22,7 @@
                     <DataTemplate >
                         <ViewCell>
                             <ViewCell.ContextActions>
-                                <MenuItem  CommandParameter="{Binding ID}" Clicked="MenuItem_Clicked" Text="修改"  />
+                                <MenuItem  CommandParameter="{Binding}" Clicked="MenuItem_Clicked" Text="修改"   />
                                 <MenuItem x:Name="DeleteBtn"  CommandParameter="{Binding ID}" Clicked="MenuItem_Clicked_1" Text="删除" IsDestructive="True" />
                             </ViewCell.ContextActions>
                             <StackLayout Padding="10">

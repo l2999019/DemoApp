@@ -1,4 +1,5 @@
-﻿using DemoApp.HTTPClientDemo.ViewModels;
+﻿using DemoApp.HTTPClientDemo.Model;
+using DemoApp.HTTPClientDemo.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,10 @@ namespace DemoApp.HTTPClientDemo
 
         private void MenuItem_Clicked(object sender, EventArgs e)
         {
-            
+            var mi = ((MenuItem)sender);
+            ContextModel date = mi.CommandParameter as ContextModel;
+            Navigation.PushAsync(new ContextModelPage());
+            MessagingCenter.Send<ListViewPage,ContextModel>(this, "GetModel", date);
         }
 
         private async void MenuItem_Clicked_1(object sender, EventArgs e)

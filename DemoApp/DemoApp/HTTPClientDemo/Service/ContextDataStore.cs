@@ -42,9 +42,22 @@ namespace DemoApp.HTTPClientDemo.Service
         public async Task<bool> UpdateItemAsync(ContextModel item)
         {
 
-           
+            var uri = new Uri(RestUrl + "/UpdateDate/");
+            var json = JsonConvert.SerializeObject(item);
+            //  var dic = JsonToDictionary.ToDictionary(json);
+            //var content = new  FormUrlEncodedContent(dic);
+            var content = new StringContent(json);
+            content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+            var response = await client.PostAsync(uri, content);
 
-            return await Task.FromResult(true);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var date = await response.Content.ReadAsStringAsync();
+                return Convert.ToBoolean(date);
+
+            }
+            return false;
         }
 
         public async Task<bool> DeleteItemAsync(int id)

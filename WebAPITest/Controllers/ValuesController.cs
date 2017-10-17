@@ -32,15 +32,15 @@ namespace WebAPITest.Controllers
 
 
         // PUT api/values/5
-        public bool Put([FromBody]string value)
+        public bool UpdateDate(Models.ContextTable datemodel)
         {
-            var date = JsonConvert.DeserializeObject<Models.ContextTable>(value);
+           // var date = JsonConvert.DeserializeObject<Models.ContextTable>(value);
             using (Models.School_TestEntities entites = new Models.School_TestEntities())
             {
-                var model = entites.ContextTable.Where(a => a.ID == date.ID).FirstOrDefault();
-                model.Title = date.Title;
-                model.AddTime = date.AddTime;
-                model.Context = date.Context;
+                var model = entites.ContextTable.Where(a => a.ID == datemodel.ID).FirstOrDefault();
+                model.Title = datemodel.Title;
+                model.AddTime = datemodel.AddTime;
+                model.Context = datemodel.Context;
                 
                 if (entites.SaveChanges() > 0)
                 {

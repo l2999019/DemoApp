@@ -21,9 +21,6 @@ namespace DemoApp
                  DisplayAlert("提示", "传过来的参数为" + item, "确定");
                  this.lab.Text = item;
                 lab.TextColor = Color.Red;
-
-
-
             });
             
         }
